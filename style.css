@@ -1,3 +1,13 @@
+.d_none {
+  display: none !important;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 #fruit_buttons {
   width: 100%;
   height: 50vh;
@@ -8,6 +18,7 @@
 }
 
 button {
+  align-self: center;
   width: 150px;
   height: 50px;
   border-radius: 10px;
@@ -17,4 +28,61 @@ button {
   font-size: large;
   cursor: pointer;
   margin: 6px 12px;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dialog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  height: 600px;
+  width: 300px;
+  background-color: #1f6e8c;
+  border-radius: 20px;
+  margin: 20px;
+  color: whitesmoke;
+}
+
+.dialog_bottom_section {
+  align-self: center;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left_arrow {
+  color: whitesmoke;
+  font-size: 48px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.right_arrow {
+  color: whitesmoke;
+  font-size: 48px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.counter {
+  color: whitesmoke;
+  font-size: 24px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
 }
